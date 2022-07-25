@@ -1,0 +1,101 @@
+.ticker-wrapper {
+  background: linear-gradient(90deg, #274CD6 0%, #CF63C6 49.91%, #80D7C4 100%);
+  overflow: hidden;
+  width: 100%;
+  height: 36px;
+  position: relative;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 36px;
+    transform: translate(100%, 0);
+
+    p {
+      font-family: 'Avenir Next', sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+
+    img {
+      height: 15px;
+    }
+  }
+
+  .ticker-wrapper__first-half,
+  .ticker-wrapper__second-half {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: ticker 40s infinite linear forwards;
+  }
+
+  .ticker-wrapper__second-half {
+    animation: 40s ticker 20s infinite linear forwards;
+  }
+}
+
+
+.hide-ticker {
+  @include onDesktop {
+    display: none;
+  }
+}
+
+
+.icon {
+
+  @include onDesktop {
+    display: block;
+  }
+
+  &--menu {
+    @include onDesktop {
+      display: block;
+    }
+  }
+}
+
+
+.white-color {
+  color: $mainColor;
+}
+
+.image {
+  width: 16px;
+}
+
+.span {
+  font-family: 'Playfair Display', sans-serif;
+
+  &--orange {
+    color: $red;
+  }
+
+  &--blue {
+    color: $blue;
+  }
+
+  &--salmon {
+    color: $salmon;
+  }
+}
+
+.hide-ticker-2 {
+  @include onMobile {
+    display: none;
+  }
+}
+
+

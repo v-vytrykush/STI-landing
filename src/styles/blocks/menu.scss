@@ -1,0 +1,93 @@
+.menu-img {
+  margin-left: 90%;
+  margin-top: 19px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+
+  @include onDesktop {
+    display: block;
+  }
+}
+
+.menu {
+  &__container {
+    @include onDesktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 18px;
+    }
+  }
+
+  @include onDesktop {
+    display: block;
+  }
+}
+
+.menu-ul-container {
+  margin-top: 0;
+}
+
+.ul-item {
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 200%;
+
+  color: $dark;
+}
+
+.menu-ul {
+  padding: 0;
+  list-style: none;
+  margin-left: 28px;
+}
+
+.disp {
+  display: none;
+}
+
+.menu-btn2 {
+  width: 50px;
+  height: 50px;
+  margin-left: 28px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $dark;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0px $dark;
+
+  transition: all 0.1s;
+
+  &:hover {
+    -webkit-transform: translate(2px, 1px);
+    -ms-transform: translate(2px, 1px);
+    transform: translate(2px, 1px);
+    cursor: pointer;
+    box-shadow: 3px 3px 0px 0px $dark;
+  }
+}
+
+
+.menu-container {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 2%;
+  min-width: 281px;
+  height: 281px;
+  background: $mainColor;
+  border: 1px solid $dark;
+  border-radius: 15px;
+}

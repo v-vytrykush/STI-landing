@@ -1,0 +1,23 @@
+@import './utils';
+
+@import './blocks/btn.scss';
+@import './blocks/button-link.scss';
+@import './blocks/footer.scss';
+@import './blocks/get-started.scss';
+@import './blocks/header.scss';
+@import './blocks/kits.scss';
+@import './blocks/logos.scss';
+@import './blocks/main.scss';
+@import './blocks/media.scss';
+@import './blocks/menu.scss';
+@import './blocks/mission.scss';
+@import './blocks/nav.scss';
+@import './blocks/slides.scss';
+@import './blocks/ticker.scss';
+@import './blocks/waitlist.scss';
+
+.overflow {
+  overflow-y: hidden;
+}
+
+

@@ -1,0 +1,311 @@
+.slides {
+  &__container {
+    background: linear-gradient(30deg, rgba(209, 143, 130, 1) 10%, rgba(77, 143, 221, 1) 50%, rgba(188, 155, 122, 1) 90%);
+    height: 660px;
+    border-top: 1px solid $dark;
+    border-bottom: 1px solid $dark;
+
+    @include onDesktop {
+     height: 100%;
+    }
+  }
+
+  &__upper-text {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      color: $mainColor;
+      font-family: 'Avenir Next';
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  &__title-3 {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 105%;
+    margin-bottom: 20px;
+
+    letter-spacing: -3px;
+
+    color: $mainColor;
+
+    @include onDesktop {
+      margin-top: 20px;
+      font-size: 36px;
+    }
+  }
+
+  &__text-2 {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    max-width: 359px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: $mainColor;
+  }
+
+
+  &__title-2 {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 105%;
+    margin-bottom: 20px;
+
+    letter-spacing: -3px;
+
+    color: $mainColor;
+
+    @include onDesktop {
+      margin-top: 20px;
+      font-size: 36px;
+    }
+  }
+
+  &__img-first {
+    @include onDesktop {
+      width: 354px;
+      height: 222px;
+    }
+  }
+
+  &__title-hide {
+    display: none;
+
+    @include onDesktop {
+      margin-top: 20px;
+      margin-bottom: 15px;
+      display: block;
+      font-family: 'Avenir Next';
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 105%;
+      letter-spacing: -3px;
+      color: $mainColor;
+    }
+  }
+
+  &__text-hide {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      font-family: 'Avenir Next';
+      font-style: normal;
+      max-width: 359px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 160%;
+      color: $mainColor;
+    }
+  }
+
+  &__first {
+    position: sticky;
+    top: 118px;
+    z-index: 1;
+
+    width: 100%;
+  }
+
+  &__top-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 106px;
+
+    @include onDesktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__bottom-first {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+
+    @include onDesktop {
+      flex-direction: column;
+      padding: 0 5%;
+    }
+  }
+
+  &__text-container-first {
+    margin-top: 24px;
+  }
+
+  &__second {
+    position: sticky;
+    top: 118px;
+    z-index: 2;
+    width: 100%;
+  }
+
+  &__bottom-second {
+    display: flex;
+    padding-left: 5%;
+
+    @include onDesktop {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__top-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 93px;
+
+    @include onDesktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-container-second {
+    margin-top: 62px;
+    margin-left: 106px;
+    width: 50%;
+
+    @include onDesktop {
+      margin: 0;
+    }
+  }
+
+  &__img-container-second {
+    width: 50%;
+  }
+
+  &__img-second {
+    width: auto;
+    height: 507px;
+
+    @include onDesktop {
+      height: 400px;
+      width: 350px;
+      margin-top: 20px;
+    }
+  }
+
+
+
+  &__third {
+    position: sticky;
+    top: 118px;
+    z-index: 3;
+  }
+
+  &__bottom-third {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+
+    @include onDesktop {
+     flex-direction: column;
+     padding: 0 5%;
+    }
+  }
+
+  &__top-third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img-third {
+    margin-top: -50px;
+    width: 546px;
+    height: 636px;
+
+    @include onDesktop {
+      width: 280px;
+      height: 350px;
+      margin-top: 20px;
+    }
+  }
+
+  &__text-container-third {
+    max-width: 500px;
+    margin-top: 160px;
+
+    @include onDesktop {
+      margin: 0;
+    }
+  }
+
+  &__text-third {
+    max-width: 500px;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: $mainColor;
+  }
+
+  &__number-top {
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 95%;
+  }
+
+  &__img-top {
+    position: relative;
+  }
+
+  &__title {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 105%;
+    margin-bottom: 20px;
+
+    letter-spacing: -3px;
+
+    color: $mainColor;
+
+    @include onDesktop {
+      display: none;
+    }
+
+  }
+
+  &__span {
+    font-family: 'Playfair Display', sans-serif;
+
+    @include onDesktop {
+      color: $salmon;
+    }
+  }
+
+  &__text {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    max-width: 359px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: $mainColor;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__button {
+    margin-top: 35px;
+  }
+}

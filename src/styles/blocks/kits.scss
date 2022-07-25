@@ -1,0 +1,220 @@
+.kits {
+  &__first {
+    width: 100%;
+    display: flex;
+    height: 600px;
+    background: $mainColor;
+
+    @include onDesktop {
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  &__img {
+    @include onDesktop {
+      width: 223px;
+      height: auto;
+    }
+  }
+
+  &__img-2 {
+    @include onDesktop {
+      width: 223px;
+      height: auto;
+    }
+  }
+
+  &__second {
+    width: 100%;
+    display: flex;
+    height: 600px;
+    background: $mainColor;
+
+    @include onDesktop {
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  &__first-top {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__first-top-container {
+    position: relative;
+  }
+
+  &__top-span {
+    text-transform: uppercase;
+    position: absolute;
+    top: 12px;
+    left: 25%;
+    font-family: 'Monument Extended', sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 95%;
+
+    letter-spacing: 0.5px;
+
+    color: $dark;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: 'Avenir Next';
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 105%;
+    margin-top: 40px;
+    margin-bottom: 18px;
+
+    letter-spacing: -3px;
+
+    color: $dark;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__container {
+    position: relative;
+
+    @include onDesktop {
+      margin-bottom: 72px;
+    }
+  }
+
+  & &__urine-container-1 {
+    position: absolute;
+    top: -22%;
+    left: -18%;
+  }
+
+  &__blood-container-1 {
+    position: absolute;
+    top: -10%;
+    right: -40%;
+
+    @include onDesktop {
+      top: 20px;
+      right: -20%;
+    }
+  }
+
+  &__swab-container-1 {
+    position: absolute;
+    bottom: -42%;
+    right: 2%;
+  }
+
+  &__urine-container-2 {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+  }
+
+  &__blood-container-2 {
+    position: absolute;
+    bottom: -50px;
+    left: 10px;
+  }
+
+  &__swab-container-2 {
+    position: absolute;
+    top: -40px;
+    left: -50%;
+
+    @include onDesktop {
+      top: -30px;
+      left: -20%;
+    }
+  }
+
+  &__blood-container-3 {
+    position: absolute;
+    top: 20%;
+    left: -15%;
+  }
+
+  &__urine-container-3 {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+  }
+
+  &__swab-container-3 {
+    position: absolute;
+    top: -40px;
+    left: -50%;
+
+    @include onDesktop {
+      top: -30px;
+      left: -20%;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-family: 'Avenir Next';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    max-width: 390px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    color: $dark;
+  }
+
+  &__top-img {
+    width: 166px;
+    height: 54px;
+  }
+
+  &__first-left {
+    width: 50%;
+    box-sizing: border-box;
+    border-right: 1px solid $dark;
+    border-top: 1px solid $dark;
+
+    @include onDesktop {
+      width: 100%;
+    }
+  }
+
+  &__second-left {
+    width: 50%;
+    border-right: 1px solid $dark;
+    border-top: 1px solid $dark;
+
+    @include onDesktop {
+      width: 100%;
+    }
+  }
+
+  &__second-right {
+    width: 50%;
+    box-sizing: border-box;
+    border-top: 1px solid $dark;
+
+    @include onDesktop {
+      width: 100%;
+    }
+  }
+
+  &__first-right {
+    width: 50%;
+    border-top: 1px solid $dark;
+
+    @include onDesktop {
+      width: 100%;
+    }
+  }
+}

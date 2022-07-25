@@ -1,0 +1,173 @@
+.logos {
+  background: #fcfcf0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+
+  &__large-container {
+    width: 889px;
+    margin: 23px 23px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include onDesktop {
+      justify-content: center;
+    }
+  }
+
+  &__container-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+
+    @include onDesktop {
+      margin-top: 40px;
+      display: block;
+    }
+
+    @include onMobile {
+      margin: 0;
+    }
+  }
+
+  &__container-2 {
+    display: flex;
+    justify-content: space-between;
+
+    @include onDesktop {
+      display: block;
+      margin-top: 40px;
+    }
+  }
+
+  &__container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+
+    @include onDesktop {
+      margin-top: 0;
+      margin-bottom: 46px;
+      margin-left: 0;
+    }
+  }
+
+  &__item-3 {
+    margin-right: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include onDesktop {
+      justify-items: center;
+    }
+  }
+
+  &__item-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
+
+    @include onDesktop {
+      justify-items: center;
+    }
+  }
+
+  &__item-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include onDesktop {
+      justify-items: center;
+      margin-top: 30px;
+    }
+  }
+
+  &__item-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include onDesktop {
+      justify-items: center;
+      margin-top: 30px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    &--1 {
+      width: 36px;
+      height: 36px;
+      margin-right: 6px;
+      @include onDesktop {
+        width: 30px;
+        height: 30px;
+        margin-right: 6px;
+      }
+    }
+
+    &--2 {
+      width: 29px;
+      height: 36px;
+      margin-right: 12px;
+
+      @include onDesktop {
+        width: 24px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
+
+    &--3 {
+      height: 36px;
+      width: 108px;
+
+      @include onDesktop {
+        height: 30px;
+        width: 91px;
+      }
+    }
+
+    &--4 {
+      height: 63px;
+      width: 67px;
+
+      @include onDesktop {
+        height: 63px;
+        width: 67px;
+      }
+    }
+
+    &--5 {
+      height: 40px;
+      width: 110px;
+    }
+
+    &--6 {
+      height: 50px;
+      width: 158px;
+    }
+
+    &--7 {
+      height: 36px;
+      width: 146px;
+
+      @include onDesktop {
+        height: 30px;
+        width: 124px;
+      }
+    }
+
+  }
+}

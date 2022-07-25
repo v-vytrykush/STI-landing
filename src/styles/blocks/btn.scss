@@ -1,0 +1,40 @@
+.btn {
+  background: $blue;
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 53px;
+  border: 1px solid $dark;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0px $dark;
+  transition: all 0.1s;
+
+  &:hover {
+    -webkit-transform: translate(2px, 1px);
+    -ms-transform: translate(2px, 1px);
+    transform: translate(2px, 1px);
+    cursor: pointer;
+    box-shadow: 3px 3px 0px 0px $dark;
+  }
+
+  &--salmon {
+    background: $salmon;
+  }
+
+  &--pink {
+    background: $pinky;
+  }
+
+  &--shadow-white {
+    box-shadow: 5px 5px 0px 0px #FFFFFF;
+
+    &:hover {
+      box-shadow: 3px 3px 0px 0px #FFFFFF;
+    }
+  }
+}

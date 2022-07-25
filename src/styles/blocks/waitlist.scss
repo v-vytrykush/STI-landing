@@ -1,0 +1,147 @@
+.waitlist {
+
+  &__input-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__heart {
+    @include onDesktop {
+    width: 66.47px;
+    height: 61.58px;
+   }
+  }
+
+  &__comment {
+    @include onDesktop {
+      width: 102.26px;
+      height: 69.71px;
+    }
+  }
+
+  &__like {
+    @include onDesktop {
+      width: 58.84px;
+      height: 60.27px;
+    }
+  }
+
+  &__input {
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 600;
+    height: 39px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid $dark;
+    border-radius: 10px 0 0 10px;
+    margin-bottom: 120px;
+
+    &:focus {
+      outline-color: #3898ec;
+    }
+
+    @include onDesktop {
+      height: 29px;
+      padding: 5px;
+      width: 180px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__button {
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    background: $salmon;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 140px;
+    height: 59px;
+    margin-right: 12px;
+    border: 1px solid $dark;
+    border-radius: 0px 10px 10px 0px;
+
+    transition: all 0.1s;
+
+    &:hover {
+      background: $orange;
+      cursor: pointer;
+    }
+
+    @include onDesktop {
+      width: 100px;
+      height: 39px;
+    }
+  }
+
+  &__container {
+    background: linear-gradient(98.6deg, #D9CFFF 0%, #EBF1FF 44.29%, #DDE6EF 100%);
+    border-top: 1px solid $dark;
+    border-bottom: 1px solid $dark;
+  }
+
+  &__text {
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Avenir Next';
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 105%;
+    letter-spacing: -3px;
+
+    color: $orange;
+
+    @include onDesktop {
+      font-size: 28px;
+    }
+  }
+
+  &__subtext {
+    color: $dark;
+    font-size: 48px;
+    line-height: 50.4px;
+    letter-spacing: -3px;
+    font-family: 'Playfair Display', sans-serif;
+
+    @include onDesktop {
+      font-size: 28px;
+    }
+  }
+
+  &__text-under {
+    padding: 15px;
+    text-align: center;
+    color: $dark;
+    font-family: 'Avenir Next';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+
+    @include onDesktop {
+      font-size: 18px;
+    }
+  }
+
+
+  &__images {
+    display: flex;
+    padding-top: 96px;
+    justify-content: center;
+  }
+
+  &__heart-container {
+    padding-top: 70px;
+  }
+
+  &__like-container {
+    padding-top: 30px;
+  }
+
+  &__comment-container {
+    margin: 0 23px 0 38px;
+  }
+}

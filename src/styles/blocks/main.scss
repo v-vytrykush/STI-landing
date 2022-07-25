@@ -1,0 +1,27 @@
+.main {
+  &__get-started {
+    width: 100%;
+  }
+
+  &__logos {
+    width: 100%;
+  }
+
+  &__mission {
+    width: 100%;
+  }
+
+  &__slides {
+    width: 100%;
+  }
+}
+
+.page {
+  &__body {
+    z-index: -2;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+  }
+}

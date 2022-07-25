@@ -1,0 +1,154 @@
+.media {
+  &__container {
+    width: 100%;
+    display: flex;
+
+    @include onDesktop {
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  &__banana {
+    margin-left: 120px;
+
+    @include onDesktop {
+      margin-left: 0;
+    }
+  }
+
+  &__spotify {
+    margin-left: 120px;
+
+    @include onDesktop {
+      width: min-content;
+      margin-left: 5%;
+    }
+  }
+
+  &__title {
+    margin-left: 120px;
+
+    @include onDesktop {
+      font-size: 40px;
+      margin-left: 5%;
+    }
+  }
+
+  &__text {
+    margin-left: 120px;
+
+    @include onDesktop {
+      font-size: 14px;
+      margin-left: 5%;
+    }
+  }
+
+  &__left {
+    width: 50%;
+    background: $mainColor;
+    border-right: 1px solid $dark;
+    border-bottom: 1px solid $dark;
+
+    @include onDesktop {
+      width: 100%;
+    }
+  }
+
+  &__spotify-img {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 28px;
+
+    @include onDesktop {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &__title {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 95%;
+    letter-spacing: -3px;
+
+    color: $dark;
+
+  }
+
+  &__tiktok {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__tiktok-img {
+    margin-top: 71px;
+    margin-bottom: 18px;
+
+    @include onDesktop {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &__tiktok-text {
+    text-align: center;
+    font-family: 'Avenir Next';
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 90%;
+    letter-spacing: -3px;
+    margin-bottom: 40px;
+
+    color: $mainColor;
+
+    @include onDesktop {
+      font-size: 40px;
+    }
+  }
+
+  &__banana-img {
+    width: 80%;
+  }
+
+  &__phone {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__phone-container {
+    display: inline-block;
+    align-self: flex-end;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  &__phone-img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  &__text {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 180%;
+    letter-spacing: -0.02em;
+    margin-top: 30px;
+    margin-bottom: 41px;
+
+    color: $dark;
+  }
+
+  &__right {
+    width: 50%;
+    background: linear-gradient(156deg, rgba(253, 8, 85, 1) 0%, rgba(154, 16, 226, 1) 50%, rgba(0, 226, 239, 1) 100%);
+
+    @include onDesktop {
+      width: 100%;
+    }
+  }
+}

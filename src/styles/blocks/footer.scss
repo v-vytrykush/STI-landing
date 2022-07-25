@@ -1,0 +1,253 @@
+.footer {
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 430px;
+  z-index: -10;
+  background: $dark;
+
+  &__tiktok-hide {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      align-items: center;
+      font-family: 'Avenir Next';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 232%;
+      color: #FCFCF0;
+      word-spacing: 1rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__btn {
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__text {
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__copyright-hide {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+      margin-top: 25px;
+      text-align: center;
+      font-family: 'Avenir Next';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 232%;
+      color: $grey;
+    }
+  }
+
+  &__copyright {
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__hr {
+    background-color: #524C45;
+    width: 80%;
+    height: 1px;
+    margin-top: 70px;
+
+    @include onDesktop {
+      margin-top: 0;
+      width: 100%;
+    }
+  }
+
+  &__input-button-hide {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 26px;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &__ul-container {
+    display: flex;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__hr-container {
+    display: flex;
+    justify-content: center;
+
+    @include onDesktop {
+      width: 100%;
+    }
+  }
+
+  &__tiktok {
+    display: flex;
+    align-items: center;
+    font-family: 'Avenir Next';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 232%;
+    color: $mainColor;
+    word-spacing: 1rem;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    font-family: 'Avenir Next';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 232%;
+    text-align: center;
+    color: $grey;
+  }
+
+  &__input-button {
+    display: flex;
+    justify-content: center;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__input {
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 600;
+    height: 31px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid $dark;
+    border-radius: 10px 0 0 10px;
+
+    @include onDesktop {
+      width: 200px;
+    }
+
+    &:focus {
+      outline-color: #3898ec;
+    }
+  }
+
+  &__button {
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    background: $salmon;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 140px;
+    height: 51px;
+    border: 1px solid $dark;
+    border-radius: 0px 10px 10px 0px;
+
+    transition: all 0.1s;
+
+    &:hover {
+      background: $orange;
+      cursor: pointer;
+    }
+
+    @include onDesktop {
+      width: 100px;
+    }
+  }
+
+  &__ul-hide {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 35px;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &__top {
+    display: flex;
+    margin-left: 30%;
+    margin-right: 18%;
+    padding-top: 80px;
+    justify-content: space-between;
+
+    @include onDesktop {
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+
+  &__first-ul {
+    list-style: none;
+    color: $mainColor;
+    font-family: 'Avenir Next';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 232%;
+    margin-right: 26px;
+  }
+
+  &__second-ul {
+    list-style: none;
+    color: $mainColor;
+    font-family: 'Avenir Next';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 232%;
+
+    @include onDesktop {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      justify-content: center;
+      justify-items: center;
+    }
+  }
+
+  &__text {
+    font-family: 'Avenir Next';
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 232%;
+
+    color: $mainColor;
+
+  }
+}
